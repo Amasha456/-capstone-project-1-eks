@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Capstone Task Tracker</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+  h1 { font-size: 1.4rem; }
+  form { display: flex; gap: 8px; margin-bottom: 16px; }
+  input[type=text] { flex: 1; padding: 8px; }
+  button { padding: 8px 12px; cursor: pointer; }
+  ul { list-style: none; padding: 0; }
+  li { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #eee; }
+  li.done span { text-decoration: line-through; color: #888; }
+  li span { flex: 1; }
+  .del { color: #c00; background: none; border: none; font-size: 1.1rem; }
+  #status { font-size: 0.85rem; color: #888; margin-top: 12px; }
+</style>
+</head>
+<body>
+  <h1>Capstone Task Tracker</h1>
+  <form id="task-form">
+    <input type="text" id="task-input" placeholder="New task..." required />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="task-list"></ul>
+  <div id="status">Loading...</div>
+  <script src="script.js"></script>
+</body>
+</html>
