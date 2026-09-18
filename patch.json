@@ -1,0 +1,1 @@
+Click 'Yes' if it asks to create a new file. Paste exactly this into Notepad: {"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}} Then save (Ctrl+S) and close Notepad.
